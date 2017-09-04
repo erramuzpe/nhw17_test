@@ -1,6 +1,6 @@
 import numpy as np
 
-age = np.loadtxt("participants.tsv", skiprows=1, usecols=3)
+age = np.loadtxt("participants.tsv", skiprows=1, usecols=[3], delimiter='\t')
 
 mean_age = sum(age)/len(age)
 
